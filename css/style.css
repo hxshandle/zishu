@@ -1,0 +1,120 @@
+@font-face {
+  font-family: didot-bold;
+  src: url(../fonts/Didot_Bold.ttf); }
+
+@font-face {
+  font-family: didot;
+  src: url(../fonts/Didot.ttf); }
+
+@font-face {
+  font-family: didot-htf-m96-medium-ital;
+  src: url(../fonts/didot-htf-m96-medium-ital.ttf); }
+
+.row {
+  width: 100%; }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.page-section {
+  height: 823px; }
+  .page-section .content {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto; }
+
+.img-bg {
+  display: none; }
+
+html {
+  width: 100%; }
+  html body {
+    width: 100%; }
+
+.top-nav {
+  height: 100px;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0px;
+  z-index: 99999;
+  box-shadow: 0px 1px 5px #ccc; }
+  .top-nav .top-menu-toggle {
+    display: none; }
+  .top-nav .brand {
+    margin-left: 50px;
+    float: left; }
+  .top-nav .top-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    margin: 0 auto; }
+    .top-nav .top-menu li {
+      list-style: none;
+      display: inline-block;
+      line-height: 100px;
+      margin-left: 50px; }
+      .top-nav .top-menu li.no-marge {
+        margin-left: 0px; }
+      .top-nav .top-menu li a {
+        color: #333;
+        font-size: 12px;
+        text-decoration: none; }
+        .top-nav .top-menu li a:hover {
+          text-decoration: underline; }
+  .top-nav .icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 0; }
+    .top-nav .icons li {
+      list-style: none;
+      display: inline-block;
+      line-height: 100px; }
+      .top-nav .icons li a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-left: 6px;
+        margin-top: 34px; }
+      .top-nav .icons li .qq {
+        background: url(../img/top_nav/qq.png); }
+        .top-nav .icons li .qq:hover {
+          background: url(../img/top_nav/qq.png); }
+      .top-nav .icons li .xinlang {
+        background: url(../img/top_nav/xinlang.png); }
+        .top-nav .icons li .xinlang:hover {
+          background: url(../img/top_nav/xinlang.png); }
+      .top-nav .icons li .weixin {
+        background: url(../img/top_nav/weixin.png); }
+        .top-nav .icons li .weixin:hover {
+          background: url(../img/top_nav/weixin.png); }
+  .top-nav .search {
+    display: inline-block;
+    height: 100px;
+    margin-left: 24px;
+    margin-right: 60px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .top-nav .search .search-box {
+      margin-right: 10px;
+      width: 0px;
+      border: 0px;
+      padding: 0;
+      height: 25px;
+      background: #333;
+      color: #fff; }
+    .top-nav .search .search-icon {
+      display: inline-block;
+      margin-top: 34px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background: url(../img/top_nav/search_icon1.png) no-repeat;
+      margin-bottom: -10px; }
