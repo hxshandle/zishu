@@ -24,10 +24,9 @@ ul,li{
   padding:0;
 }
 .page-section{
-  height:823px;
-  .content{
+  height:900px;
+  .content,.container{
     width:1000px;
-    height: 100%;
     margin:0 auto;
   }
 }
@@ -38,7 +37,10 @@ html{
   width:100%;
   body{
     width:100%;
+    
   }
 }
 
+@import "_fonts";
 @import "_top_nav";
+@import "_about";

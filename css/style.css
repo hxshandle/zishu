@@ -23,10 +23,9 @@ ul, li {
   padding: 0; }
 
 .page-section {
-  height: 823px; }
-  .page-section .content {
+  height: 900px; }
+  .page-section .content, .page-section .container {
     width: 1000px;
-    height: 100%;
     margin: 0 auto; }
 
 .img-bg {
@@ -36,6 +35,24 @@ html {
   width: 100%; }
   html body {
     width: 100%; }
+
+.ft-STHeiti {
+  font-family: "STHeiti Light [STXihei]"; }
+
+.ft-dodit {
+  font-family: dodit; }
+
+.ft-thex {
+  font-family: thex; }
+
+.ft-arial {
+  font-family: Arial; }
+
+.fz-12 {
+  font-size: 12px; }
+
+.fz-16 {
+  font-size: 16px; }
 
 .top-nav {
   height: 100px;
@@ -123,3 +140,57 @@ html {
       line-height: 25px;
       background: url(../img/top_nav/search_icon1.png) no-repeat;
       margin-bottom: -10px; }
+
+#about .container {
+  padding-top: 200px; }
+  #about .container .left-nav {
+    float: left;
+    margin-left: 175px;
+    height: 344px;
+    width: 284px;
+    border-left: 1px solid #ede9d7;
+    border-right: 1px solid #ede9d7;
+    padding-top: 106px; }
+    #about .container .left-nav li {
+      text-align: center;
+      height: 30px;
+      line-height: 30px; }
+      #about .container .left-nav li.split {
+        font-size: 36px;
+        color: #333; }
+      #about .container .left-nav li img {
+        visibility: hidden;
+        margin-right: 10px; }
+      #about .container .left-nav li.active img {
+        visibility: visible; }
+      #about .container .left-nav li.active a.ft-arial {
+        color: #a1955f; }
+      #about .container .left-nav li.ft-thex {
+        color: #ede9d7; }
+      #about .container .left-nav li a.ft-arial {
+        color: #999999; }
+      #about .container .left-nav li a:hover {
+        color: #a1955f; }
+  #about .container .details-outer {
+    height: 370px;
+    width: 270px;
+    background: #a1955f;
+    float: left;
+    margin-left: 63px;
+    overflow: hidden;
+    padding: 50px 20px 30px 20px; }
+    #about .container .details-outer .jspVerticalBar {
+      width: 3px;
+      background: url(../img/scroll-bg.png) repeat-y; }
+    #about .container .details-outer .jspDrag {
+      background: #333; }
+    #about .container .details-outer .jspTrack {
+      background: none; }
+    #about .container .details-outer .scrollable {
+      width: 270px;
+      height: 370px;
+      display: none;
+      color: #fff;
+      font-size: 12px; }
+      #about .container .details-outer .scrollable.active {
+        display: block; }
