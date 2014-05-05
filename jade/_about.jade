@@ -7,15 +7,15 @@
       li.ft-thex ABOUT US
       li.split.ft-dodit ’
       each val,idx in navItems
-        - var id = '#'+val.toLowerCase().replace(' ','-')
+        - var id = val.toLowerCase().replace(' ','-')
         if idx == 0
           li.item.fz-12.active
             img(src="img/nav-selected-icon.png")
-            a.ft-arial(href='#{id}')= val
+            a.ft-arial(href='javascript:void(0)' "data-ref"='#{id}')= val
         else
           li.item.fz-12
             img(src="img/nav-selected-icon.png")
-            a.ft-arial(href='#{id}')= val
+            a.ft-arial(href='javascript:void(0)' "data-ref"='#{id}')= val
     .details-outer
       each val,idx in navItems
         - var id = val.toLowerCase().replace(' ','-')
