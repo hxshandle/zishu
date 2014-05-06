@@ -14,6 +14,13 @@
   font-family: thex;
   src: url(../fonts/HelveticaNeueLTPro-ThEx.otf); }
 
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.bg-img {
+  position: absolute; }
+
 .row {
   width: 100%; }
 
@@ -53,6 +60,12 @@ html {
 
 .fz-16 {
   font-size: 16px; }
+
+.fz-42 {
+  font-size: 42px; }
+
+.fz-10 {
+  font-size: 10px; }
 
 .top-nav {
   height: 100px;
@@ -146,7 +159,7 @@ html {
   #about .container .left-nav {
     float: left;
     margin-left: 175px;
-    height: 344px;
+    height: 450px;
     width: 284px;
     border-left: 1px solid #ede9d7;
     border-right: 1px solid #ede9d7;
@@ -172,8 +185,8 @@ html {
       #about .container .left-nav li a:hover {
         color: #a1955f; }
   #about .container .details-outer {
-    height: 370px;
-    width: 270px;
+    height: 450px;
+    width: 310px;
     background: #a1955f;
     float: left;
     margin-left: 63px;
@@ -193,4 +206,83 @@ html {
       color: #fff;
       font-size: 12px; }
       #about .container .details-outer .scrollable.active {
+        display: block; }
+
+#products {
+  background: #eeead9; }
+  #products .header {
+    text-align: center;
+    padding-top: 160px; }
+    #products .header .brand {
+      margin-right: 12px; }
+    #products .header a {
+      cursor: pointer; }
+      #products .header a img {
+        margin-top: -15px;
+        margin-right: 10px; }
+  #products .gallery-outer {
+    margin-top: 77px;
+    height: 580px;
+    position: relative;
+    background: #aaa; }
+
+#brand-news .container {
+  height: 100%; }
+  #brand-news .container .brand-wrapper {
+    border-left: 1px solid #ede9d7;
+    height: 100%;
+    float: left;
+    width: 200px;
+    padding-left: 20px; }
+    #brand-news .container .brand-wrapper .big-cycle {
+      margin-top: 360px;
+      display: block; }
+  #brand-news .container .news-nav {
+    height: 100%;
+    border-left: 1px solid #ede9d7;
+    width: 200px;
+    float: left; }
+    #brand-news .container .news-nav .pre {
+      margin-top: 128px; }
+    #brand-news .container .news-nav .pre, #brand-news .container .news-nav .after {
+      margin-left: 22px;
+      cursor: pointer; }
+    #brand-news .container .news-nav .nav-list-outer {
+      height: 560px;
+      overflow: hidden;
+      position: relative; }
+      #brand-news .container .news-nav .nav-list-outer .nav-list {
+        position: absolute;
+        left: 0;
+        top: 0; }
+        #brand-news .container .news-nav .nav-list-outer .nav-list a {
+          text-decoration: none; }
+          #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item {
+            height: 140px;
+            padding-top: 41px;
+            position: relative;
+            padding-left: 22px; }
+            #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item .year, #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item .month {
+              color: #ede9d7;
+              line-height: 1em;
+              height: 1em; }
+            #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item .title {
+              color: #999;
+              margin-top: -8px; }
+  #brand-news .container .news-details-outer {
+    float: left;
+    height: 100%;
+    border-left: 1px solid #ede9d7;
+    padding-left: 38px; }
+    #brand-news .container .news-details-outer .jspVerticalBar {
+      width: 4px; }
+    #brand-news .container .news-details-outer .jspDrag {
+      background: #ede9d7; }
+    #brand-news .container .news-details-outer .news-entity {
+      width: 310px;
+      height: 580px;
+      margin-top: 146px;
+      color: #999;
+      display: none; }
+      #brand-news .container .news-details-outer .news-entity.active {
         display: block; }
