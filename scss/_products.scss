@@ -1,0 +1,23 @@
+#products{
+  background:#eeead9;
+  .header{
+    text-align:center;
+    padding-top:160px;
+    .brand{
+      margin-right:12px;
+    }
+    a{
+      cursor:pointer;
+      img{
+        margin-top:-15px;
+        margin-right:10px;
+      }
+    }
+  }// END .header
+  .gallery-outer{
+    margin-top:77px;
+    height:580px;
+    position:relative;
+    background:#aaa;
+  }
+}// END #products

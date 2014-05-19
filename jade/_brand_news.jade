@@ -1,0 +1,49 @@
+mixin doc
+  img(src="img/ZISHU5_11.jpg")
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+  p 杭州紫淑服饰有限公司创建于2000年，座落于全国举世闻名的西子湖畔，有服装之都之称的——杭州，是一家集设计、生产、营销及物流为一体的现代化企业。
+
+mixin navItem
+  .nav-item
+    .year.fz-16.ft-thex 2014
+    .month.fz-42.ft-thex 03/04
+    .title.fz-10 紫淑十周年庆VCR解说词
+
+
+.row.page-section#brand-news
+  .container
+    .brand-wrapper
+      img.big-cycle(src="img/big-cycle-play.png")
+      img.brand(src="img/product-newsbrand.png")
+    .news-nav
+      img.pre(src="img/cycle-arrow-up.png")
+      .nav-list-outer
+        ul.nav-list
+          - for (var i = 0; i< 10; i++)
+            if i == 0
+              li
+                a.active(href="javascript:void(0);" "data-ref"="news-#{i}")
+                  +navItem()
+            else
+              li
+                a(href="javascript:void(0);" "data-ref"="news-#{i}")
+                  +navItem()
+      img.after(src="img/cycle-arrow-down.png")
+    .news-details-outer
+      - for (var i = 0; i< 10; i++)
+        if i==0
+          .news-entity.fz-12.active(id="news-#{i}")
+            +doc()
+        else
+          .news-entity.fz-12(id="news-#{i}")
+            +doc()
+      
