@@ -43,6 +43,9 @@ html {
   html body {
     width: 100%; }
 
+.fl {
+  float: left; }
+
 .ft-STHeiti {
   font-family: "STHeiti Light [STXihei]"; }
 
@@ -286,3 +289,11 @@ html {
       display: none; }
       #brand-news .container .news-details-outer .news-entity.active {
         display: block; }
+
+#show-room .container {
+  padding-top: 175px; }
+  #show-room .container .left {
+    height: 100%;
+    width: 195px;
+    background: #fff;
+    height: 630px; }
