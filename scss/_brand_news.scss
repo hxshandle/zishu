@@ -35,11 +35,25 @@
           top:0;
           a{
             text-decoration:none;
+            &.active{
+              .indify-icon{
+                background:url(../img/ZISHU5_03_03.png) no-repeat 50% 50%;
+              }
+            }// .active
             .nav-item{
               height:140px;
               padding-top:41px;
               position:relative;
               padding-left:22px;
+              span.indify-icon{
+                position:absolute;
+                top:50%;
+                left:0;
+                width:3px;
+                height:5px;
+                display:block;
+                background:url(../img/ZISHU5_03_06.png) no-repeat 50% 50%;
+              }
               .year,.month{
                 color:#ede9d7;
                 line-height:1em;
@@ -47,7 +61,6 @@
               }
               .title{
                 color:#999;
-                margin-top:-8px;
               }
             }// END .nav-item
           }// NED a

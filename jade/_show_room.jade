@@ -5,10 +5,19 @@
       img.brand(src="img/ZISHU5_15.jpg")
       select#sel-address
         - for (var i = 0;i<10;i++)
-          option(value=i data-en="Hangzhou Wulin 169" data-zh="杭州武林店169号") 浙江省杭州市#{i}
-      span.address-zh
-      sapn.address-en
+          option(value=i data-en="Hangzhou Wulin 169-#{i}" data-zh="杭州武林店169-#{i}号") 浙江省杭州市#{i}
+      span.ft-STHeiti.address-zh
+      sapn.ft-thex.address-en
+      .nav
+        span.nav-pre
+        span.nav-next 
     .image-wrapper.fl
+      - for (var i = 0; i < 10 ;i++)
+        .group-image(id="addr-#{i}")
+          -for (var k = 0 ; k < 5;k++)
+            img(src="img/ZISHU5_16.png")
+
+      
 
 
 

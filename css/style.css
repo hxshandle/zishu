@@ -1,19 +1,15 @@
 @font-face {
   font-family: didot-bold;
   src: url(../fonts/Didot_Bold.ttf); }
-
 @font-face {
   font-family: didot;
   src: url(../fonts/Didot.ttf); }
-
 @font-face {
   font-family: didot-htf-m96-medium-ital;
   src: url(../fonts/didot-htf-m96-medium-ital.ttf); }
-
 @font-face {
   font-family: thex;
   src: url(../fonts/HelveticaNeueLTPro-ThEx.otf); }
-
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -260,18 +256,27 @@ html {
         top: 0; }
         #brand-news .container .news-nav .nav-list-outer .nav-list a {
           text-decoration: none; }
+          #brand-news .container .news-nav .nav-list-outer .nav-list a.active .indify-icon {
+            background: url(../img/ZISHU5_03_03.png) no-repeat 50% 50%; }
           #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item {
             height: 140px;
             padding-top: 41px;
             position: relative;
             padding-left: 22px; }
+            #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item span.indify-icon {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 3px;
+              height: 5px;
+              display: block;
+              background: url(../img/ZISHU5_03_06.png) no-repeat 50% 50%; }
             #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item .year, #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item .month {
               color: #ede9d7;
               line-height: 1em;
               height: 1em; }
             #brand-news .container .news-nav .nav-list-outer .nav-list a .nav-item .title {
-              color: #999;
-              margin-top: -8px; }
+              color: #999; }
   #brand-news .container .news-details-outer {
     float: left;
     height: 100%;
@@ -294,6 +299,68 @@ html {
   padding-top: 175px; }
   #show-room .container .left {
     height: 100%;
-    width: 195px;
+    width: 191px;
     background: #fff;
     height: 630px; }
+    #show-room .container .left .nav .nav-pre {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: url(../img/nav-left-gray.png) no-repeat;
+      cursor: pointer; }
+    #show-room .container .left .nav .nav-next {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: url(../img/nav-right-gray.png) no-repeat;
+      cursor: pointer;
+      margin-left: 20px; }
+    #show-room .container .left .sbHolder {
+      width: 140px;
+      border: 1px solid #ccc;
+      margin: 160px 0 0 30px; }
+    #show-room .container .left .sbToggle {
+      background: url(../img/select-icons.png) 7px -116px no-repeat; }
+      #show-room .container .left .sbToggle:hover {
+        background: url(../img/select-icons.png) 7px -167px no-repeat; }
+    #show-room .container .left .sbToggleOpen {
+      background: url(../img/select-icons.png) 7px -16px no-repeat; }
+      #show-room .container .left .sbToggleOpen:hover {
+        background: url(../img/select-icons.png) 7px -66px no-repeat; }
+    #show-room .container .left .sbSelector {
+      width: 110px; }
+    #show-room .container .left .sbOptions {
+      width: 140px; }
+    #show-room .container .left .sbOptions a:link, #show-room .container .left .sbOptions a:visited {
+      color: #aaa; }
+    #show-room .container .left .address-zh {
+      font-size: 12px;
+      color: #999;
+      display: block;
+      padding-left: 30px;
+      padding-top: 20px; }
+    #show-room .container .left .address-en {
+      font-size: 12px;
+      color: #a1955f;
+      display: block;
+      padding-left: 30px; }
+    #show-room .container .left .nav {
+      padding-left: 30px; }
+  #show-room .container .image-wrapper {
+    width: 809px; }
+    #show-room .container .image-wrapper .group-image {
+      display: none; }
+      #show-room .container .image-wrapper .group-image.active {
+        display: block; }
+
+#contact-us .container {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+  #contact-us .container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -290px;
+    margin-top: -174px; }
