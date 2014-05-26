@@ -1,4 +1,5 @@
 $(function() {
+  return;
 
   function toggleTopNav() {
     var scrollTop = $(window).scrollTop();
