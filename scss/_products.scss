@@ -1,23 +1,41 @@
 #products{
-  background:#eeead9;
+  background:#f1eee1;
   .header{
     text-align:center;
-    padding-top:160px;
+    padding-top:84px;
     .brand{
       margin-right:12px;
     }
-    a{
-      cursor:pointer;
-      img{
-        margin-top:-15px;
-        margin-right:10px;
-      }
+    .split{
+      width:640px;
+      border-bottom:1px solid #999;
+      height:0px;
+      margin:0 auto;
+      padding-top:5px;
     }
+    .sub-menu{
+      a{
+        color:#999;
+        text-decoration:none;
+        padding:0px 20px;
+        &:hover{
+        text-decoration:underline;
+        }
+      }
+    }// .sub-menu
+
   }// END .header
   .gallery-outer{
     margin-top:77px;
     height:580px;
     position:relative;
-    background:#aaa;
-  }
+
+    .prod-section{
+      display:none;
+      &.active{
+        display:block;
+      }
+    }// .prod-section
+
+  }// .gallery-outer
 }// END #products

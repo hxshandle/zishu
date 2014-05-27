@@ -1,15 +1,19 @@
 @font-face {
   font-family: didot-bold;
   src: url(../fonts/Didot_Bold.ttf); }
+
 @font-face {
   font-family: didot;
   src: url(../fonts/Didot.ttf); }
+
 @font-face {
   font-family: didot-htf-m96-medium-ital;
   src: url(../fonts/didot-htf-m96-medium-ital.ttf); }
+
 @font-face {
   font-family: thex;
   src: url(../fonts/HelveticaNeueLTPro-ThEx.otf); }
+
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -208,22 +212,32 @@ html {
         display: block; }
 
 #products {
-  background: #eeead9; }
+  background: #f1eee1; }
   #products .header {
     text-align: center;
-    padding-top: 160px; }
+    padding-top: 84px; }
     #products .header .brand {
       margin-right: 12px; }
-    #products .header a {
-      cursor: pointer; }
-      #products .header a img {
-        margin-top: -15px;
-        margin-right: 10px; }
+    #products .header .split {
+      width: 640px;
+      border-bottom: 1px solid #999;
+      height: 0px;
+      margin: 0 auto;
+      padding-top: 5px; }
+    #products .header .sub-menu a {
+      color: #999;
+      text-decoration: none;
+      padding: 0px 20px; }
+      #products .header .sub-menu a:hover {
+        text-decoration: underline; }
   #products .gallery-outer {
     margin-top: 77px;
     height: 580px;
-    position: relative;
-    background: #aaa; }
+    position: relative; }
+    #products .gallery-outer .prod-section {
+      display: none; }
+      #products .gallery-outer .prod-section.active {
+        display: block; }
 
 #brand-news .container {
   height: 100%; }

@@ -1,16 +1,24 @@
-- var imgs = ['prod-1.jpg','prod-2.jpg','prod-1.jpg','prod-2.jpg']
+- var refImgs = ['img/prod-1.jpg','img/prod-2.png']
 .row.page-section#products
   .header
-    img.brand(src="img/product-show-brand.png")
-    a#prod-up
-      img(src="img/cycle-arrow-up.png")
-    a#prod-down
-      img(src="img/cycle-arrow-down.png")
+    img.brand(src="img/prod-brand.png")
+    .split
+    .sub-menu
+      a.fz-12(href="javascript:void(0)" data-ref="prod-ad") AD CAMPAIGN
+      a.fz-12(href="javascript:void(0)" data-ref="prod-collocation") COLLOCATION
+      a.fz-12(href="javascript:void(0)" data-ref="prod-video") VIDEO
   .gallery-outer
-    - for (var i = 0; i < 5 ; i++)
-      ul.img-gallery
-        li
-        
+    .prod-section#prod-ad
+    .prod-section.prod-gallery.active#prod-collocation
+      .prod-container
+        ul#prod-collocation-list
+          - for (var i = 0; i < 20;i++)
+            li(data-ref=refImgs[i%2])
+              a(href="javascript:void(0)")
+                img(src=refImgs[i%2])
+
+    .prod-section#prod-video
+    
 
 
 

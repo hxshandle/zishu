@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/jquery.selectbox.css">
     <link rel="stylesheet" href="css/nivo-slider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.products-gallery.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <title></title>
   </head>
@@ -70,7 +71,42 @@
         </div>
       </div>
     </div>
-    <!--include _products-->
+    <div id="products" class="row page-section">
+      <div class="header"><img src="img/prod-brand.png" class="brand">
+        <div class="split"></div>
+        <div class="sub-menu"><a href="javascript:void(0)" data-ref="prod-ad" class="fz-12">AD CAMPAIGN</a><a href="javascript:void(0)" data-ref="prod-collocation" class="fz-12">COLLOCATION</a><a href="javascript:void(0)" data-ref="prod-video" class="fz-12">VIDEO</a></div>
+      </div>
+      <div class="gallery-outer">
+        <div id="prod-ad" class="prod-section"></div>
+        <div id="prod-collocation" class="prod-section prod-gallery active">
+          <div class="prod-container">
+            <ul id="prod-collocation-list">
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+              <li data-ref="img/prod-1.jpg"><a href="javascript:void(0)"><img src="img/prod-1.jpg"></a></li>
+              <li data-ref="img/prod-2.png"><a href="javascript:void(0)"><img src="img/prod-2.png"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="prod-video" class="prod-section"></div>
+      </div>
+    </div>
     <div id="brand-news" class="row page-section">
       <div class="container">
         <div class="brand-wrapper"><img src="img/big-cycle-play.png" class="big-cycle"><img src="img/product-newsbrand.png" class="brand"></div>
@@ -330,6 +366,7 @@
     <script src="js/vendor/jquery.superscrollorama.min.js"></script>
     <script src="js/vendor/TweenMax-1.11.4.min.js"></script>
     <script src="js/vendor/jquery.nivo.slider.js"></script>
+    <script src="js/vendor/jquery.products-gallery.js"></script>
     <script src="js/vendor/jquery.slides.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/_common.js"></script>
