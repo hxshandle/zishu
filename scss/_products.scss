@@ -37,5 +37,16 @@
       }
     }// .prod-section
 
+    #prod-ad{
+      .image-gallery{
+        font-size:0px;
+        text-align:center;
+        li{
+          display:inline-block;
+          padding:5px;
+        }
+      }
+    }// #prod-ad
+
   }// .gallery-outer
 }// END #products

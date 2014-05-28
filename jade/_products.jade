@@ -8,8 +8,24 @@
       a.fz-12(href="javascript:void(0)" data-ref="prod-collocation") COLLOCATION
       a.fz-12(href="javascript:void(0)" data-ref="prod-video") VIDEO
   .gallery-outer
-    .prod-section#prod-ad
-    .prod-section.prod-gallery.active#prod-collocation
+    .prod-section.active#prod-ad
+      ul.image-gallery
+        li.bottom
+          .top-span
+          img(src="img/prod-1.jpg")
+          .bottom-span
+        li.top
+          img(src="img/prod-2.png")
+        li.bottom
+          .outer
+            img(src="img/camera.png")
+            .split
+            .txt 2014 SUMMER
+          img(src="img/prod-1.jpg")
+        li.top
+          img(src="img/prod-2.png")
+        
+    .prod-section.prod-gallery#prod-collocation
       .prod-container
         ul#prod-collocation-list
           - for (var i = 0; i < 20;i++)
