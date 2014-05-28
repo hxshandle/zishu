@@ -39,6 +39,9 @@ html {
   html body {
     width: 100%; }
 
+#landing {
+  background-attachment: fixed; }
+
 .fl {
   float: left; }
 
