@@ -76,7 +76,7 @@ html {
   background: #fff;
   width: 100%;
   top: 0px;
-  z-index: 99999;
+  z-index: 900;
   box-shadow: 0px 1px 5px #ccc; }
   .top-nav .top-menu-toggle {
     display: none; }

@@ -1,6 +1,15 @@
+var global={};
+
+function onResize(){
+  var $win = $(window);
+  global.winWidth = $win.width();
+  global.winHeight = $win.height();
+}
+
 function scrollable(selector){
   $(selector).jScrollPane();
 }
+
 
 function switchContent(toggleSelector,relatedSelector){
   $(toggleSelector).click(function(){
@@ -11,5 +20,9 @@ function switchContent(toggleSelector,relatedSelector){
     $(relatedSelector).filter('.active').removeClass('active').css({display:'none'});
     $('#'+ref).fadeIn().addClass('active').jScrollPane();
   });
-
 }
+
+$(function(){
+  onResize();
+  $(window).resize(onResize);
+});
