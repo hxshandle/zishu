@@ -120,17 +120,17 @@ html {
         margin-left: 6px;
         margin-top: 34px; }
       .top-nav .icons li .qq {
-        background: url(../img/top_nav/qq.png); }
+        background: url(../img/QQ.png); }
         .top-nav .icons li .qq:hover {
-          background: url(../img/top_nav/qq.png); }
+          background: url(../img/QQ_V.png); }
       .top-nav .icons li .xinlang {
-        background: url(../img/top_nav/xinlang.png); }
+        background: url(../img/WX.png); }
         .top-nav .icons li .xinlang:hover {
-          background: url(../img/top_nav/xinlang.png); }
+          background: url(../img/WX_V.png); }
       .top-nav .icons li .weixin {
-        background: url(../img/top_nav/weixin.png); }
+        background: url(../img/XL.png); }
         .top-nav .icons li .weixin:hover {
-          background: url(../img/top_nav/weixin.png); }
+          background: url(../img/XL_V.png); }
   .top-nav .search {
     display: inline-block;
     height: 100px;
@@ -153,8 +153,13 @@ html {
       width: 25px;
       height: 25px;
       line-height: 25px;
-      background: url(../img/top_nav/search_icon1.png) no-repeat;
+      background: url(../img/SOSUO.png) no-repeat;
       margin-bottom: -10px; }
+      .top-nav .search .search-icon:hover {
+        background: url(../img/SOSUO_V.png) no-repeat; }
+
+#landing {
+  margin-top: 100px; }
 
 #about .container {
   padding-top: 200px; }
@@ -229,6 +234,8 @@ html {
       padding: 0px 20px; }
       #products .header .sub-menu a:hover {
         text-decoration: underline; }
+      #products .header .sub-menu a.active {
+        color: #a89d6b; }
   #products .gallery-outer {
     margin-top: 77px;
     height: 580px;
@@ -237,12 +244,48 @@ html {
       display: none; }
       #products .gallery-outer .prod-section.active {
         display: block; }
-    #products .gallery-outer #prod-ad .image-gallery {
+      #products .gallery-outer .prod-section .prod-series-section {
+        display: none; }
+        #products .gallery-outer .prod-section .prod-series-section.active {
+          display: block; }
+        #products .gallery-outer .prod-section .prod-series-section .video-wrapper {
+          width: 660px;
+          margin: 0 auto; }
+          #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left {
+            width: 140px;
+            height: 410px; }
+    #products .gallery-outer #prod-seasons .image-gallery {
       font-size: 0px;
       text-align: center; }
-      #products .gallery-outer #prod-ad .image-gallery li {
+      #products .gallery-outer #prod-seasons .image-gallery li {
         display: inline-block;
-        padding: 5px; }
+        padding: 5px;
+        cursor: pointer;
+        vertical-align: top; }
+        #products .gallery-outer #prod-seasons .image-gallery li .wrapper .series {
+          width: 221px;
+          height: 336px; }
+        #products .gallery-outer #prod-seasons .image-gallery li .wrapper:hover .outer {
+          opacity: 100;
+          transition: all 1s ease; }
+        #products .gallery-outer #prod-seasons .image-gallery li .wrapper .outer {
+          opacity: 0;
+          height: 60px; }
+          #products .gallery-outer #prod-seasons .image-gallery li .wrapper .outer .txt {
+            font-size: 10px;
+            color: #999; }
+          #products .gallery-outer #prod-seasons .image-gallery li .wrapper .outer .split {
+            width: 160px;
+            margin: 0 auto;
+            height: 0px;
+            line-height: 0px;
+            border-bottom: 1px solid #999; }
+        #products .gallery-outer #prod-seasons .image-gallery li.top .series {
+          margin-top: 10px; }
+        #products .gallery-outer #prod-seasons .image-gallery li.top .outer {
+          margin-top: 10px; }
+        #products .gallery-outer #prod-seasons .image-gallery li.bottom .outer {
+          margin-bottom: 10px; }
 
 #brand-news .container {
   height: 100%; }

@@ -1,41 +1,72 @@
 - var refImgs = ['img/prod-1.jpg','img/prod-2.png']
+- var menu = ['Seasons','large','Collocation','Video','Spring','Summer','Autumn','Winter']
+- var series = ['spring','summer','autumn','winter']
+- var seriesTypes = ['large','collocation','video']
 .row.page-section#products
   .header
     img.brand(src="img/prod-brand.png")
     .split
     .sub-menu
-      a.fz-12(href="javascript:void(0)" data-ref="prod-ad") AD CAMPAIGN
-      a.fz-12(href="javascript:void(0)" data-ref="prod-collocation") COLLOCATION
-      a.fz-12(href="javascript:void(0)" data-ref="prod-video") VIDEO
+      - for (var i=0;i<menu.length;i++)
+        - var m = menu[i]
+        - var um = m.toUpperCase()
+        - var lm = m.toLowerCase()
+        a.fz-12(href="javascript:void(0)" data-ref="prod-#{lm}" id="sub-menu-prod-#{lm}") #{um}
   .gallery-outer
-    .prod-section.active#prod-ad
+    .prod-section.active#prod-seasons
       ul.image-gallery
-        li.bottom
-          .top-span
-          img(src="img/prod-1.jpg")
-          .bottom-span
-        li.top
-          img(src="img/prod-2.png")
-        li.bottom
-          .outer
-            img(src="img/camera.png")
-            .split
-            .txt 2014 SUMMER
-          img(src="img/prod-1.jpg")
-        li.top
-          img(src="img/prod-2.png")
-        
-    .prod-section.prod-gallery#prod-collocation
-      .prod-container
-        ul#prod-collocation-list
-          - for (var i = 0; i < 20;i++)
-            li(data-ref=refImgs[i%2])
-              a(href="javascript:void(0)")
-                img(src=refImgs[i%2])
+        li.bottom.series-spring
+          .wrapper
+            .outer
+              img(src="img/camera.png")
+              .split
+              .txt 2014 SPRING
+            img.series(src="img/prod-1.jpg")
+          .clear
+        li.top.series-summer
+          .wrapper
+            img.series(src="img/prod-2.png")
+            .outer
+              img(src="img/camera.png")
+              .split
+              .txt 2014 SUMMER
+        li.bottom.series-autumn
+          .wrapper
+            .outer
+              img(src="img/camera.png")
+              .split
+              .txt 2014 AUTUMN
+            img.series(src="img/prod-1.jpg")
+        li.top.series-winter
+          .wrapper
+            img.series(src="img/prod-2.png")
+            .outer
+              img(src="img/camera.png")
+              .split
+              .txt 2014 WINTER
 
-    .prod-section#prod-video
-    
-
-
-
+    .prod-section#prod-series
+      - for (var i = 0; i < series.length;i++)
+        - var seriesName = series[i]
+        - for (var k = 0; k < seriesTypes.length;k++)
+          - var seriesType = seriesTypes[k]
+          - var id = "prod-series-"+seriesName+'-'+seriesType
+          if seriesType == "video"
+            .prod-series-section.prod-series-section-video(id="prod-series-#{seriesName}-#{seriesType}")
+              .video-wrapper
+                .left.fl
+                  ul.video-nav
+                    - for (var j = 0 ; j < 10; j++)
+                      li.video-nav-item(data-ref="video-#{j}")
+                        a(href="javascript:void(0)")
+                          img(src="img/video-thumb.jpg")
+                .right.fl
+          else
+            .prod-series-section.prod-series-section-gallery(id="prod-series-#{seriesName}-#{seriesType}")
+              .prod-container
+                ul(id="#{id}-list")
+                  - for (var p = 0; p < 20;p++)
+                    li(data-ref=refImgs[p%2])
+                      a(href="javascript:void(0)")
+                        img(src=refImgs[p%2])
 

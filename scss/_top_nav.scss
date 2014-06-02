@@ -60,21 +60,21 @@
         margin-top:34px;
       }// END a
       .qq{
-        background:url(../img/top_nav/qq.png);
+        background:url(../img/QQ.png);
         &:hover{
-          background:url(../img/top_nav/qq.png);
+          background:url(../img/QQ_V.png);
         }
       }
       .xinlang{
-        background:url(../img/top_nav/xinlang.png);
+        background:url(../img/WX.png);
         &:hover{
-          background:url(../img/top_nav/xinlang.png);
+          background:url(../img/WX_V.png);
         }
       }
       .weixin{
-        background:url(../img/top_nav/weixin.png);
+        background:url(../img/XL.png);
         &:hover{
-          background:url(../img/top_nav/weixin.png);
+          background:url(../img/XL_V.png);
         }
       }
     }// NED li
@@ -104,8 +104,11 @@
       width: 25px;
       height: 25px;
       line-height: 25px;
-      background:url(../img/top_nav/search_icon1.png) no-repeat;
+      background:url(../img/SOSUO.png) no-repeat;
       margin-bottom:-10px;
+      &:hover{
+        background:url(../img/SOSUO_V.png) no-repeat;
+      }
     }
 
   }//END .search

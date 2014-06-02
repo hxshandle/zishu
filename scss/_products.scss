@@ -21,7 +21,10 @@
         &:hover{
         text-decoration:underline;
         }
-      }
+        &.active{
+          color:#a89d6b;
+        }
+      }// .a
     }// .sub-menu
 
   }// END .header
@@ -35,18 +38,76 @@
       &.active{
         display:block;
       }
+
+      .prod-series-section{
+        display:none;
+        &.active{
+          display:block;
+        }
+
+        .video-wrapper{
+          width:660px;
+          margin:0 auto;
+          .left{
+            width:140px;
+            height:410px;
+          }
+        }// .video-wrapper
+      }// .prod-series-section
     }// .prod-section
 
-    #prod-ad{
+    #prod-seasons{
       .image-gallery{
         font-size:0px;
         text-align:center;
         li{
           display:inline-block;
           padding:5px;
-        }
-      }
-    }// #prod-ad
+          cursor:pointer;
+          vertical-align:top;
+          .wrapper{
+            .series{
+              width:221px;
+              height:336px;
+            }
+            &:hover{
+              .outer{
+                opacity:100;
+                transition:all 1s ease;
+              }
+            }// .wrapper:hover
+            .outer{
+              opacity:0;
+              height:60px;
+              .txt{
+                font-size:10px;
+                color:#999;
+              }
+              .split{
+                width:160px;
+                margin:0 auto;
+                height:0px;
+                line-height:0px;
+                border-bottom:1px solid #999;
+              }
+            }// .outer
+          }// .wrapper
+          &.top{
+            .series{
+              margin-top:10px;
+            }
+            .outer{
+              margin-top:10px;
+            }
+          }// .top
+          &.bottom{
+            .outer{
+              margin-bottom:10px;
+            }
+          }
+        }// .li
+      }// .image-gallery
+    }// #prod-seasons
 
   }// .gallery-outer
 }// END #products
