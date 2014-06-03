@@ -11,6 +11,13 @@ $(function() {
   });
 
   $('.sub-menu a:first').addClass('active');
+
+  $('.video-nav li').click(function(){
+    var $this = $(this);
+    var ref = $this.data('ref');
+    var root = $this.parents('.video-wrapper');
+    $('iframe',root).attr('src',ref);
+  });
   
   // handle menu click
   $('.sub-menu a').click(function(){
@@ -47,6 +54,7 @@ $(function() {
         $('#prod-series-'+seriesSeason+'-'+seriesType).removeClass('active');
         seriesSeason = menuKey;
         $('#sub-menu-prod-'+seriesType).addClass('active');
+        $('#prod-seasons').removeClass('active');
         $('#prod-series').addClass('active');
         $('#prod-series-'+seriesSeason+'-'+seriesType).addClass('active');
         break;

@@ -46,12 +46,30 @@
         }
 
         .video-wrapper{
-          width:660px;
+          width:680px;
           margin:0 auto;
           .left{
             width:140px;
             height:410px;
-          }
+            margin-right:-4px;
+            .video-nav{
+              img{
+                margin-bottom:1px;
+              }
+            }
+            .jspVerticalBar{
+              right:5px;
+            }
+            .jspVerticalBar{
+              background:none;
+            }
+            .jspTrack{
+              background:#ccc;
+            }
+            .jspDrag{
+              background:#a1955f;
+            }
+          }// .left
         }// .video-wrapper
       }// .prod-series-section
     }// .prod-section

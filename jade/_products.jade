@@ -2,6 +2,7 @@
 - var menu = ['Seasons','large','Collocation','Video','Spring','Summer','Autumn','Winter']
 - var series = ['spring','summer','autumn','winter']
 - var seriesTypes = ['large','collocation','video']
+- var videos = ["http://player.youku.com/embed/XNzA0MzQzMDQw","http://player.youku.com/embed/XNjU1NTEzNjI4"]
 .row.page-section#products
   .header
     img.brand(src="img/prod-brand.png")
@@ -57,10 +58,12 @@
                 .left.fl
                   ul.video-nav
                     - for (var j = 0 ; j < 10; j++)
-                      li.video-nav-item(data-ref="video-#{j}")
+                      li.video-nav-item(data-ref=videos[j%2])
                         a(href="javascript:void(0)")
                           img(src="img/video-thumb.jpg")
                 .right.fl
+                  iframe(src=videos[0] height=410 width=530 frameborder=0 allowfullscreen) 
+
           else
             .prod-series-section.prod-series-section-gallery(id="prod-series-#{seriesName}-#{seriesType}")
               .prod-container

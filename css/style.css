@@ -158,8 +158,52 @@ html {
       .top-nav .search .search-icon:hover {
         background: url(../img/SOSUO_V.png) no-repeat; }
 
+@-webkit-keyframes rotate360 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@-moz-keyframes rotate360 {
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-o-keyframes rotate360 {
+  0% {
+    -o-transform: rotate(0deg); }
+
+  100% {
+    -o-transform: rotate(360deg); } }
+@-ms-keyframes rotate360 {
+  0% {
+    -ms-transform: rotate(0deg); }
+
+  100% {
+    -ms-transform: rotate(360deg); } }
+@-keyframes rotate360 {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
 #landing {
-  margin-top: 100px; }
+  margin-top: 100px;
+  position: relative; }
+  #landing .animate {
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 650px;
+    height: 650px;
+    -webkit-animation: rotate360 10s infinite linear;
+    -moz-animation: rotate360 10s infinite linear;
+    -o-animation: rotate360 10s infinite linear;
+    -ms-animation: rotate360 10s infinite linear;
+    animation: rotate360 10s infinite linear; }
 
 #about .container {
   padding-top: 200px; }
@@ -249,11 +293,22 @@ html {
         #products .gallery-outer .prod-section .prod-series-section.active {
           display: block; }
         #products .gallery-outer .prod-section .prod-series-section .video-wrapper {
-          width: 660px;
+          width: 680px;
           margin: 0 auto; }
           #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left {
             width: 140px;
-            height: 410px; }
+            height: 410px;
+            margin-right: -4px; }
+            #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left .video-nav img {
+              margin-bottom: 1px; }
+            #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left .jspVerticalBar {
+              right: 5px; }
+            #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left .jspVerticalBar {
+              background: none; }
+            #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left .jspTrack {
+              background: #ccc; }
+            #products .gallery-outer .prod-section .prod-series-section .video-wrapper .left .jspDrag {
+              background: #a1955f; }
     #products .gallery-outer #prod-seasons .image-gallery {
       font-size: 0px;
       text-align: center; }
