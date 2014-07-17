@@ -32,6 +32,7 @@ $(function() {
         $('#prod-series-'+seriesSeason+'-'+seriesType).removeClass('active');
         $('#prod-seasons').addClass('active');
         $('#prod-series').removeClass('active');
+        $('.prod-series-section.active').removeClass('active');
         break;
       case "large":
       case "collocation":
@@ -57,6 +58,9 @@ $(function() {
         $('#prod-seasons').removeClass('active');
         $('#prod-series').addClass('active');
         $('#prod-series-'+seriesSeason+'-'+seriesType).addClass('active');
+        if(seriesType == "video"){
+          $('.left',$('#prod-series-'+seriesSeason+'-'+seriesType)).jScrollPane();
+        }
         break;
       default:
         break;
